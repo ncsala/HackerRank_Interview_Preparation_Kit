@@ -3,6 +3,17 @@ package clases;
 
 import java.util.*;
 
+
+/**
+ * There is a large pile of socks that must be paired by color. Given an array of
+ * integers representing the color of each sock, determine how many pairs of socks 
+ * with matching colors there are.
+ * 
+ * has the following parameter(s):
+ * - int n: the number of socks in the pile
+ * - int ar[n]: the colors of each sock
+ */
+
 public class Solution {
 
     public static void main(String[] args) {
