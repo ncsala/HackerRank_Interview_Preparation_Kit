@@ -14,6 +14,7 @@ import java.util.*;
  * - int ar[n]: the colors of each sock
  */
 
+
 public class Solution {
 
     public static void main(String[] args) {
@@ -34,10 +35,11 @@ public class Solution {
 }
 
 
+
 /**
  * Solucion que te brinda HackerRank *
- * 
- * class Solution {
+ *
+ class Solution {
 
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
