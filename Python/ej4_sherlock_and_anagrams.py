@@ -3,12 +3,7 @@
 other string. Given a string, find the number of pairs of substrings of the string that are 
 anagrams of each other."""
 
-
-import math
 import os
-import random
-import re
-import sys
 
 #
 # Complete the 'sherlockAndAnagrams' function below.
