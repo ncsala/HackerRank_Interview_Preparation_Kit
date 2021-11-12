@@ -1,5 +1,3 @@
-# -*- coding: utf-8 -*-
-
 
 """
  The player can jump on any cumulus cloud having a number that is equal to the number of the current 
@@ -8,14 +6,6 @@
 
 For each game, you will get an array of clouds numbered 0 if they are safe or 1 if they must be avoided."""
 
-#!/bin/python3
-
-import math
-import os
-import random
-import re
-import sys
-
 #
 # 'jumpingOnClouds'#
 # The function is expected to return an INTEGER.
@@ -23,7 +13,7 @@ import sys
 #
 
 def jumpingOnClouds(c):
-    # Write your cod
+    # Write your code
     contadorJumps = 0
     index = 0
     
@@ -40,19 +30,3 @@ def jumpingOnClouds(c):
         contadorJumps += 1
     
     return (contadorJumps)
-             
-    
-    
-
-if __name__ == '__main__':
-    fptr = open(os.environ['OUTPUT_PATH'], 'w')
-
-    n = int(input().strip())
-
-    c = list(map(int, input().rstrip().split()))
-
-    result = jumpingOnClouds(c)
-
-    fptr.write(str(result) + '\n')
-
-    fptr.close()

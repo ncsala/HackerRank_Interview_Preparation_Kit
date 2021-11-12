@@ -3,14 +3,6 @@ Given the sequence of up and down steps during a hike, .
 find and print the number of valleys walked through.
 """
 
-#!/bin/python3
-
-import math
-import os
-import random
-import re
-import sys
-
 #
 # countingValleys has the following parameter(s):
 # int steps: the number of steps on the hike
@@ -37,15 +29,3 @@ def countingValleys(steps, path):
     return (valleys)
     
 
-if __name__ == '__main__':
-    fptr = open(os.environ['OUTPUT_PATH'], 'w')
-
-    steps = int(input().strip())
-
-    path = input()
-
-    result = countingValleys(steps, path)
-
-    fptr.write(str(result) + '\n')
-
-    fptr.close()

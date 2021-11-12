@@ -3,8 +3,6 @@
 other string. Given a string, find the number of pairs of substrings of the string that are 
 anagrams of each other."""
 
-import os
-
 #
 # Complete the 'sherlockAndAnagrams' function below.
 #
@@ -31,19 +29,3 @@ def sherlockAndAnagrams(s):
         contador += sum( [r for r in range(diccionario[string])] )
         
     return (contador)
-        
-
-if __name__ == '__main__':
-    fptr = open(os.environ['OUTPUT_PATH'], 'w')
-
-    q = int(input().strip())
-
-    for q_itr in range(q):
-        s = input()
-
-        result = sherlockAndAnagrams(s)
-
-        fptr.write(str(result) + '\n')
-
-    fptr.close()
-                    

@@ -4,16 +4,6 @@ Given two strings,a  and ,b that may or may not be of the same length, determine
 the minimum number of character deletions required to  a  and b anagrams. Any characters
 can be deleted from either of the strings.
 """
-
-#!/bin/python3
-
-import math
-import os
-import random
-import re
-import sys
-from collections import Counter
-
 #
 # Function 'makeAnagram'
 #
@@ -22,6 +12,8 @@ from collections import Counter
 #  1. STRING a
 #  2. STRING b
 #
+
+from collections import Counter
 
 def makeAnagram(a, b):
     # Write your code 
@@ -32,18 +24,3 @@ def makeAnagram(a, b):
     s = sum(abs(i) for i in val)
     
     return (s)
-         
-    
-
-if __name__ == '__main__':
-    fptr = open(os.environ['OUTPUT_PATH'], 'w')
-
-    a = input()
-
-    b = input()
-
-    res = makeAnagram(a, b)
-
-    fptr.write(str(res) + '\n')
-
-    fptr.close()

@@ -4,7 +4,6 @@ Given an array a of n integers and a number, d, perform d left rotations on the 
 
 
 def rotLeft(a, d):
-    # Solution here
     for _ in range(d):
         a.append(a.pop(0))
 
