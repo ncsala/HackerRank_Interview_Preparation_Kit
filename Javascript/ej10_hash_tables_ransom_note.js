@@ -17,14 +17,12 @@ function ransomNote(magazine, note) {
 
 	for (let word of magazine) {
 		map[word] = (map[word] || 0) + 1;
-		console.log(map);
 	}
 
 	console.log('-----------------------------');
 
 	for (let word of note) {
 		map[word] = (map[word] || 0) - 1;
-		console.log(map);
 	}
 
 	for (let key in map) {
